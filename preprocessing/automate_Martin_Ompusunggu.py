@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import os
+import sys
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler, OrdinalEncoder
@@ -71,8 +72,11 @@ def automate_preprocessing_pipeline(data_path, save_csv_path, model_save_dir):
     print(f"✅ Preprocessing selesai. Dataset disimpan di: {save_csv_path}")
 
 
-    if __name__ == "__main__" :
+    if __name__ == "__main__":
+        data_path = sys.argv[1]
+        save_path = sys.argv[2]
         automate_preprocessing_pipeline(
-        data_path="../diabetes_012_health_indicators_BRFSS2015.csv",
-        save_csv_path="preprocessed_diabetes.csv",
+            data_path=data_path,
+            save_csv_path=save_path,
+            model_save_dir="model_registry"
     )
