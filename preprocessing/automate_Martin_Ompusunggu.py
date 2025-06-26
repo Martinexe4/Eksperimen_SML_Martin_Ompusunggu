@@ -79,4 +79,4 @@ def automate_preprocessing_pipeline(data_path, save_csv_path, model_save_dir):
             data_path=data_path,
             save_csv_path=save_path,
             model_save_dir="model_registry"
-    )
+        )
