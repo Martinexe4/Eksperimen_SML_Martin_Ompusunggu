@@ -27,7 +27,7 @@ def automate_preprocessing_pipeline(data_path, save_csv_path, model_save_dir):
 
     # Rename kolom target jika perlu
     if "Diabetes_012" in df.columns:
-        df = df.rename(columns={"Diabetes_012": "Diabetes"})
+        df = df.rename(columns={"Diabetes_012": "isDiabetes"})
     
     # Buat kolom BMI_Category terlebih dahulu
     df["BMI_Category"] = df["BMI"].apply(bin_bmi)
