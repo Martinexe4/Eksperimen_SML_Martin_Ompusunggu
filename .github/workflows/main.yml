@@ -31,7 +31,7 @@ jobs:
 
       - name: Run preprocessing
         run: |
-          python Preprocessing/Automate_Arsyadana_Estu_Aziz.py AmesHousing_raw.csv Preprocessing/AmesHousing_cleaned.csv
+          python Preprocessing/Automate_Martin_Ompusunggu.py diabetes_012_health_indicators_BRFSS2015.csv Preprocessing/diabetes_cleaned.csv
 
       - name: Commit and push changes
         run: |
