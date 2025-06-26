@@ -72,7 +72,7 @@ def automate_preprocessing_pipeline(data_path, save_csv_path, model_save_dir):
     final_df[target_col] = df[target_col].values
 
     # Simpan hasil akhir tanpa header
-    final_df.to_csv(save_csv_path, index=False, header=False)
+    final_df.to_csv(save_csv_path, index=False, header=True)
     print(f"✅ Preprocessing selesai. Dataset disimpan di: {save_csv_path}")
 
 
