@@ -72,11 +72,11 @@ def automate_preprocessing_pipeline(data_path, save_csv_path, model_save_dir):
     print(f"✅ Preprocessing selesai. Dataset disimpan di: {save_csv_path}")
 
 
-    if __name__ == "__main__":
-        data_path = sys.argv[1]
-        save_path = sys.argv[2]
-        automate_preprocessing_pipeline(
-            data_path=data_path,
-            save_csv_path=save_path,
-            model_save_dir="model_registry"
-        )
+if __name__ == "__main__":
+    data_path = sys.argv[1]
+    save_path = sys.argv[2]
+    automate_preprocessing_pipeline(
+        data_path=data_path,
+        save_csv_path=save_path,
+        model_save_dir="model_registry"
+    )
